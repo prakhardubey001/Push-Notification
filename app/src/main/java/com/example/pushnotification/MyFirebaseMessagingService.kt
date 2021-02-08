@@ -36,9 +36,9 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
             }
         }
 
-        // Check if message contains a notification payload.
+        // Caddheck if message contains a notification payload.
         if (remoteMessage.notification != null) {
-            Log.d(TAG, "Message Notification Body: " + remoteMessage.notification!!.body)
+            Log.d(TAG, "Message Notification Body log: " + remoteMessage.notification!!.body)
             handleNow(remoteMessage)
         }
 
